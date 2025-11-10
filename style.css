@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* GERAL */
+body {
+  background-color: #f5f5f5;
+  color: #2f622f;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5f1e0;
+  padding: 10px 40px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Centraliza o menu */
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #3a7a3a;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  background-image: url("Imagens/Remar2.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 80px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  background-color: #d9ebd4; 
+  color: #3a7a3a;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #2f622;
+}
+/*Quote*/
+.quote {
+  background-color: #e5f1e0;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+  color: #3a7a3a;
+  font-weight: 600;
+}
+/* SECÇÕES DE CONTEÚDO */
+section {
+  padding: 50px 60px;
+}
+
+.sobre, .peças {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.texto, .imagem {
+  flex: 1;
+  margin: 10px;
+}
+
+.imagem img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #3a7a3a;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #3a7a3a; 
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2f622f;
+}
+
+/* LOCALIZAÇÕES */
+.localizacoes {
+  background-color: #d9ebd4;
+  text-align: center;
+  padding: 60px 80px;
+  margin-bottom: 40px; /* <<< esta linha cria o espaço branco */
+}
+.locais {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  margin: 10px;
+}
+
+/* FORMULÁRIO */
+.inscricao {
+  background-color: #d9ebd4;
+  text-align: center;
+  padding: 60px 80px;
+}
+
+.inscricao h2 {
+  color: #3a7a3a;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.form-container {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 30px 50px;
+  width: 350px;
+  margin: 0 auto;
+  border: 1px solid #cce3cc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #b8d4b8;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #3a7a3a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #2f622f;
+}
+
+/* FOOTER */
+footer {
+  background-color: #e5f1e0;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100px; /* altura igual para tudo */
+}
+
+.footer-logo img {
+  height: 50px; /* igual ao header */
+  width: auto;
+}
+
+/* Texto central */
+.copy {
+  color: #3a7a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Redes sociais à direita */
+.redes {
+  text-align: right;
+}
+
+.redes p {
+  color: #3a7a3a;
+  font-weight: bold;
+  margin: 2px 0;
+  font-size: 16px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .redes {
+    text-align: center;
+  }
+}
